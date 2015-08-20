@@ -23,5 +23,10 @@
         "psr-4": {
             "Wkii\\": ""
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
     }
 }
