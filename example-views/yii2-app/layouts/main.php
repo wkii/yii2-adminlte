@@ -11,7 +11,7 @@ if (Yii::$app->controller->action->id === 'login') {
  * Instead, use the code  $this->layout = '//single'; in your controller.
  */
     echo $this->render(
-        'single',
+        'sign',
         ['content' => $content]
     );
 } else {

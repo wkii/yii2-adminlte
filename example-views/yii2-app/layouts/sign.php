@@ -1,8 +1,6 @@
 <?php
 /**
- * single page layout. No sidebar, no control-sidebar, no footer, no content-header, no breadcrumbs.
- * for iframe dialog.
- * e.g. in action: $this->layout = 'single';
+ * login or sign up
  */
 use yii\helpers\Html;
 
@@ -25,18 +23,9 @@ Wkii\AdminLTE\Asset\AdminLteAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <?php $this->head() ?>
 </head>
-<body class="hold-transition">
+<body class="hold-transition login-page">
 <?php $this->beginBody() ?>
-<div class="wrapper">
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper" style="margin-left: 0;">
-        <!-- Main content -->
-        <section class="content">
-            <?= $content ?>
-    </div><!-- /.content -->
-</div><!-- /.content-wrapper -->
-</div><!-- ./wrapper -->
-<!-- REQUIRED JS SCRIPTS -->
+    <?= $content ?>
 <?php $this->endBody() ?>
 </body>
 </html>

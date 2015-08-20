@@ -97,6 +97,11 @@ e.g.
 ['label' => 'Gii', 'url' => ['/gii'], 'icon' =>'fa-gavel']
 ```
 
+Layout
+-------------------
+Default layout is `main.php`. 
+add `single` single page layout. No sidebar, no control-sidebar, no footer, no content-header, no breadcrumbs. for iframe dialog.
+
 Further Information
 -------------------
 
