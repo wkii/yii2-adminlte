@@ -99,11 +99,48 @@ e.g.
 
 Layout
 -------------------
-Default layout is `main.php`. 
+Default layout is `main.php`.  
 add `single` single page layout. No sidebar, no control-sidebar, no footer, no content-header, no breadcrumbs. for iframe dialog.
+
+Pjax
+-------------------
+pjax templates use [yiisoft/jquery-pjax](https://github.com/yiisoft/jquery-pjax).
+pjax layout is `pjax-main.php`. It's include `pjax-main-content.php`. 
+`pjax-content.php`  output only content of div `#pjax-container`.
+
+Use pjax,  you can change it in config
+```
+'layout' => 'pjax-main',
+'components' => [
+   // ......
+]
+```
+Or your Controller add attribute 
+```
+public $layout='pjax-main';
+```
+
+Controller action example:
+```
+    public function actionWelcome()
+    {
+        if (Yii::$app->request->isPjax) {
+            $this->layout = 'pjax-content';
+            return $this->render('welcome');
+        } else {
+            return $this->render('welcome');
+        }
+    }
+```
+
 
 Further Information
 -------------------
 
-For AdminLTE documentation, please read https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html
+For AdminLTE documentation, please read  
+* https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html
+
+For Pjax, please read
+ * https://github.com/yiisoft/jquery-pjax
+ * https://github.com/defunkt/jquery-pjax
  

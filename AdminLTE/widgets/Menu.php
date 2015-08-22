@@ -1,4 +1,8 @@
 <?php
+/**
+ * AdminLTE Menu widget
+ * @author Terry<digihero@gmail.com>
+ */
 
 namespace Wkii\AdminLTE\widgets;
 
@@ -19,7 +23,7 @@ class Menu extends yii\widgets\Menu
      * while `{label}` will be replaced with the link text.
      * This property will be overridden by the `template` option set in individual menu items via [[items]].
      */
-    public $linkTemplate = '<a href="{url}">{icon} <span>{label}</span> {angle}</a>';
+    public $linkTemplate = '<a href="{url}"{pjax}>{icon} <span>{label}</span> {angle}</a>';
     /**
      * @var string the template used to render a list of sub-menus.
      * In this template, the token `{items}` will be replaced with the rendered sub-menu items.
@@ -55,7 +59,8 @@ class Menu extends yii\widgets\Menu
                 '{url}' => Html::encode(Url::to($item['url'])),
                 '{label}' => $item['label'],
                 '{icon}' => isset($item['icon']) ? '<i class="fa '.$item['icon'].'"></i>' : '',
-                '{angle}' => isset($item['items']) ? '<i class="fa fa-angle-left pull-right"></i>' : ''
+                '{angle}' => isset($item['items']) ? '<i class="fa fa-angle-left pull-right"></i>' : '',
+                '{pjax}' => isset($item['pjax']) && $item['pjax'] === true ? ' data-pjax="true"' : ''
             ]);
         } else {
             $template = ArrayHelper::getValue($item, 'template', $this->labelTemplate);

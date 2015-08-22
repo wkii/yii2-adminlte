@@ -5,7 +5,8 @@
         <?= Wkii\AdminLTE\Widgets\Menu::widget([
             'items' => [
                 ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
-                ['label' => 'Gii', 'url' => ['/gii'], 'icon' =>'fa-gavel'],
+                ['label' => 'Welcome', 'url' => ['site/welcome'], 'icon' =>'fa-gavel', 'pjax'=>true],
+                ['label' => 'Gii', 'url' => ['/gii'], 'icon' =>'fa-gavel', 'pjax'=>true],
                 ['label' => 'Debug', 'url' => ['/debug'], 'icon' => 'fa-bug'],
                 ['label' => 'Login', 'url' => ['site/logout'], 'visible' => !Yii::$app->user->isGuest, 'icon' => 'fa-sign-out'],
 

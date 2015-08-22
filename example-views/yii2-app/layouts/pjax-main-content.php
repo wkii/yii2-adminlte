@@ -1,9 +1,14 @@
 <?php
+/**
+ * Pjax content Layout For pjax-main.
+ * no css,js,header,footer.
+ * For pjax. No include content-footer.
+ */
 use Wkii\AdminLTE\Widgets\Alert;
 
 ?>
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+<div class="content-wrapper" id="pjax-container">
     <section class="content-header">
         <?php if (isset($this->blocks['content-header'])) { ?>
             <h1><?= $this->blocks['content-header'] ?></h1>

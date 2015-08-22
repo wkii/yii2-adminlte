@@ -1,7 +1,7 @@
 <?php
 /**
  * Breadcrumbs for AdminLTE
- * @author terry digihero@gmail.com
+ * @author terry<digihero@gmail.com>
  */
 
 namespace Wkii\AdminLTE\widgets;

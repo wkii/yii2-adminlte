@@ -1,9 +1,15 @@
 <?php
+/**
+ * Pjax content Layout.
+ * It's only have section 'content-header' and 'content'.
+ * `content-header` used to output the content part of title and breadcrumbs
+ * @auther Terry
+ */
+
 use Wkii\AdminLTE\Widgets\Alert;
 
 ?>
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+
     <section class="content-header">
         <?php if (isset($this->blocks['content-header'])) { ?>
             <h1><?= $this->blocks['content-header'] ?></h1>
@@ -35,4 +41,3 @@ use Wkii\AdminLTE\Widgets\Alert;
         <?= Alert::widget() ?>
         <?= $content ?>
     </section><!-- /.content -->
-</div><!-- /.content-wrapper -->
