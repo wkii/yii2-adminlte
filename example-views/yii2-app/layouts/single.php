@@ -5,6 +5,7 @@
  * e.g. in action: $this->layout = 'single';
  */
 use yii\helpers\Html;
+use Wkii\AdminLTE\Widgets\Alert;
 
 Wkii\AdminLTE\Asset\AdminLteAsset::register($this);
 ?>
@@ -32,6 +33,7 @@ Wkii\AdminLTE\Asset\AdminLteAsset::register($this);
     <div class="content-wrapper" style="margin-left: 0;">
         <!-- Main content -->
         <section class="content">
+            <?= Alert::widget() ?>
             <?= $content ?>
     </div><!-- /.content -->
 </div><!-- /.content-wrapper -->

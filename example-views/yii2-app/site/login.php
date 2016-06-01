@@ -10,12 +10,19 @@ $this->title = 'Sign In';
 
 $fieldOptions1 = [
     'options' => ['class' => 'form-group has-feedback'],
-    'inputTemplate' => "{input}<span class='glyphicon glyphicon-envelope form-control-feedback'></span>"
+    'inputTemplate' => "{input}<span class='glyphicon glyphicon-envelope form-control-feedback'></span>",
+    'inputOptions' => [
+        'autocomplete' => 'off','tabindex'=>1, 'maxlength'=>60
+    ]
 ];
 
 $fieldOptions2 = [
     'options' => ['class' => 'form-group has-feedback'],
-    'inputTemplate' => "{input}<span class='glyphicon glyphicon-lock form-control-feedback'></span>"
+    'inputTemplate' => "{input}<span class='glyphicon glyphicon-lock form-control-feedback'></span>",
+    'inputOptions' => ['oncopy'=>"return false", 'oncut' => "return false", 'onpaste' => "return false",
+        'oncontextmenu'=> "return false;",
+        'autocomplete' => 'off','tabindex'=>2
+    ]
 ];
 ?>
 

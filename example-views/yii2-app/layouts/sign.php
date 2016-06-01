@@ -3,6 +3,7 @@
  * login or sign up
  */
 use yii\helpers\Html;
+use Wkii\AdminLTE\Widgets\Alert;
 
 Wkii\AdminLTE\Asset\AdminLteAsset::register($this);
 ?>
@@ -25,6 +26,7 @@ Wkii\AdminLTE\Asset\AdminLteAsset::register($this);
 </head>
 <body class="hold-transition login-page">
 <?php $this->beginBody() ?>
+<?= Alert::widget() ?>
     <?= $content ?>
 <?php $this->endBody() ?>
 </body>
