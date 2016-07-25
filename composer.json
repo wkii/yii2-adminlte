@@ -17,7 +17,7 @@
         "yiisoft/yii2": "2.*",
         "yiisoft/yii2-bootstrap": "2.*",
         "almasaeed2010/adminlte": "~2.0",
-        "bower-asset/fontawesome": ">=4.4.0",
+        "bower-asset/fontawesome": ">=4.6.3",
         "bower-asset/pace": "1.*"
     },
     "autoload": {

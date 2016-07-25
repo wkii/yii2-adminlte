@@ -11,7 +11,7 @@ class FontAwesomeAsset extends \Yii\web\AssetBundle
     /**
      * @inherit
      */
-    public $sourcePath = '@bower/fontawesome';
+    public $sourcePath = '@bower/font-awesome';
 
     /**
      * @inherit
