@@ -22,7 +22,7 @@ use Wkii\AdminLTE\Widgets\Alert;
         <?php } ?>
 
         <?=
-        Wkii\AdminLTE\widgets\Breadcrumbs::widget(
+        Wkii\AdminLTE\Widgets\Breadcrumbs::widget(
             [
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]
