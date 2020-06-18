@@ -1,5 +1,12 @@
-Yii2 AdminLTE Asset Bundle
-=====================
+# Notice
+
+This project is out of maintenance.
+
+Recommended use: https://packagist.org/packages/dmstr/yii2-adminlte-asset
+
+
+
+# Yii2 AdminLTE Asset Bundle
 
 *Backend UI for Yii2 Framework, based on [AdminLTE v2.x](https://github.com/almasaeed2010/AdminLTE)*
 
@@ -12,8 +19,7 @@ composer global require "fxp/composer-asset-plugin:~1.0.0"
 ```
 
 
-Installation
-------------
+## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
@@ -23,8 +29,7 @@ To install AdminLTE v2 run:
 composer require wkii/yii2-adminlte
 ```
 
-Quick Start
------------
+## Quick Start
 
 Once the extension is installed, you can have a **preview** by reconfiguring the path mappings of the view component:
 
@@ -47,8 +52,7 @@ This asset bundle provides sample files for layout and view (see folder `example
 Therefore it is recommended to **copy the views files into your application views folder** and adjust them to your needs.
 
 
-Customization
--------------
+## Customization
 
 - Copy files from `vendor/wkii/yii2-adminlte/example-views/yii2-app` (or other theme) to `@app/views`.
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
@@ -97,13 +101,13 @@ e.g.
 ['label' => 'Gii', 'url' => ['/gii'], 'icon' =>'fa-gavel']
 ```
 
-Layout
--------------------
+## Layout
+
 Default layout is `main.php`.  
 add `single` single page layout. No sidebar, no control-sidebar, no footer, no content-header, no breadcrumbs. for iframe dialog.
 
-Pjax
--------------------
+## Pjax
+
 pjax templates use [yiisoft/jquery-pjax](https://github.com/yiisoft/jquery-pjax).
 pjax layout is `pjax-main.php`. It's include `pjax-main-content.php`. 
 `pjax-content.php`  output only content of div `#pjax-container`.
@@ -134,8 +138,7 @@ Controller action example:
 ```
 
 
-Further Information
--------------------
+## Further Information
 
 For AdminLTE documentation, please read  
 * https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html
